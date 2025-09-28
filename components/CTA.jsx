@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import FancyButton from "@/components/FancyButton"
 
-import { BOOKING_URL, CONTENT } from "@/app/constants"
+import { CONTACT_URL, CONTENT } from "@/app/constants"
 
 export default function CTA() {
     return (
@@ -22,16 +22,12 @@ export default function CTA() {
                 </p>
                 <div className="mt-8 flex justify-center gap-4 pt-2">
                     <Link
-                        href="/#our-stays"
-                        className="inline-flex h-[44px] items-center justify-center rounded-full bg-secondary px-6 py-1 font-medium text-white transition-all hover:bg-secondary/90"
+                        href="/about"
+                        className="inline-flex h-[44px] items-center justify-center rounded-xl bg-secondary px-6 py-1 font-medium text-white transition-all hover:bg-secondary/90"
                     >
-                        Explore Stays
+                        Know More
                     </Link>
-                    <FancyButton
-                        href={BOOKING_URL}
-                        target="_blank"
-                        text="Book Now"
-                    />
+                    <FancyButton href={CONTACT_URL} text="Contact Us" />
                 </div>
             </div>
         </section>

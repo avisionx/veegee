@@ -10,20 +10,20 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      heading: ['"Playfair Display"', 'serif'],
-      body: ['"Inter"', 'sans-serif'],
+      heading: ['"League Spartan"', 'sans-serif'],
+      body: ['"Poppins"', 'sans-serif'],
     },
     extend: {
       colors: {
         current: "currentColor",
         transparent: "transparent",
-        white: "#fffffa",
-        black: "#1a1a1a",
-        'text': '#1a1a1a',
+        white: "#FFFFFA",
+        black: "#373737",
+        'text': '#373737',
         'background': '#f4f1ee',
-        'primary': '#3a5a40',
-        'secondary': '#a98467',
-        'accent': '#e9e5df',
+        'primary': '#a22f1b',
+        'secondary': '#093a7b',
+        'accent': '#00B0FF',
       },
       maxWidth: {
         '8xl': '90rem',

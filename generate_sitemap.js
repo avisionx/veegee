@@ -1,49 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-// COPY THIS FROM THE CONSTANTS FILE BEFORE RUNNING THE SCRIPT
-const STAY_OPTIONS = [
-    {
-        location: "bhor",
-        title: "Bhor",
-        options: [
-            {
-                id: "mango-tree-chalet",
-                name: "The Mango Tree Chalet – 1 BH Luxury Villa",
-            },
-            {
-                id: "a-frame-cabins",
-                name: "A Frame Cabins",
-            },
-            {
-                id: "soulspree-bungalow",
-                name: "SoulSpree – 2 BH Bungalow",
-            },
-            {
-                id: "tents-glamping",
-                name: "Tents and Glamping",
-            },
-        ],
-    },
-    {
-        location: "khopoli",
-        title: "Khopoli (Coming Soon)",
-        options: [],
-    },
-]
-
 const DOMAIN = 'https://veegee.info';
 
 const DAILY_08 = [
     '/about',
     '/contact',
-    '/faqs',
     '/tnc',
-    '/cancellation',
     '/privacy',
 ]
 
-const WEEKLY_08 = STAY_OPTIONS.flatMap(({ location, options }) =>
+const WEEKLY_08 = [].flatMap(({ location, options }) =>
     options.length > 0 ? options.map(({ id }) => `/${location}/${id}`) : []
 );
 

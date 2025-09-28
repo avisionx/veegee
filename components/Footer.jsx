@@ -4,16 +4,16 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { FOOTER_LINKS } from "@/app/constants"
-import LOGO from "@/assets/waterrock-logo.svg"
+import LOGO from "@/assets/vee-gee-logo.png"
 
 export default function Footer() {
     return (
         <footer className="mx-auto max-w-9xl px-4 pb-8">
-            <div className="rounded-2xl bg-primary/5 px-6 py-8 md:p-12">
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+            <div className="rounded-2xl bg-accent/5 px-6 py-8 md:p-12">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
                         <Link href="/" className="inline-block">
-                            <Image src={LOGO} className="w-32" alt="" />
+                            <Image src={LOGO} className="w-72" alt="" />
                         </Link>
                     </div>
                     {FOOTER_LINKS.map((section) => (
@@ -64,7 +64,7 @@ export default function Footer() {
                     <p className="mt-1">
                         Copyright © {new Date().getFullYear()}{" "}
                         <Link href="/" className="underline">
-                            WaterRock
+                            Vee Gee Exports Limited
                         </Link>
                         . All Rights Reserved.{" "}
                     </p>

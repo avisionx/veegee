@@ -31,7 +31,7 @@ export default function ScrollToTop() {
         <div className="fixed bottom-8 right-8 z-[99]">
             {isVisible && (
                 <button
-                    className="group relative inline-flex size-12 items-center justify-center overflow-hidden rounded-full bg-primary text-white"
+                    className="group relative inline-flex size-12 items-center justify-center overflow-hidden rounded-xl bg-primary text-white"
                     onClick={scrollToTop}
                 >
                     <div className="translate-y-0 transition group-hover:-translate-y-[300%]">

@@ -21,7 +21,7 @@ export default function NotFoundPage() {
                 <div>
                     <Link
                         href="/"
-                        className="mt-12 flex h-[44px] items-center justify-center gap-3 rounded-full bg-primary px-6 py-1 font-medium text-white transition-all hover:bg-primary/90"
+                        className="mt-12 flex h-[44px] items-center justify-center gap-3 rounded-xl bg-primary px-6 py-1 font-medium text-white transition-all hover:bg-primary/90"
                     >
                         Go Back Home <ArrowRightIcon className="size-4" />
                     </Link>

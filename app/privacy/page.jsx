@@ -16,49 +16,47 @@ export default function PrivacyPage() {
                     title={CONTENT.privacy.title}
                     subtitle={CONTENT.privacy.subtitle}
                 />
-                <div className="rounded-2xl bg-primary/5 px-6 py-6 md:text-lg">
+                <div className="rounded-2xl bg-secondary/5 px-6 py-6 md:text-lg">
                     <ul className="list-disc space-y-3 pl-5 text-black/70">
                         <li>
-                            WaterRock values your privacy and is committed to
-                            safeguarding your personal information.
+                            Vee Gee Exports Limited values your privacy and is
+                            committed to safeguarding your personal and business
+                            information.
                         </li>
                         <li>
-                            Personal data such as your name, contact number,
-                            email ID, and government-issued ID is collected for
-                            booking and verification purposes only.
+                            We may collect information such as your name,
+                            company name, email address, and phone number to
+                            facilitate communication and business operations.
                         </li>
                         <li>
-                            We do not sell or share your personal information
-                            with third-party advertisers or marketers.
+                            Your information will not be sold, rented, or shared
+                            with third-party advertisers or marketers without
+                            your explicit consent.
                         </li>
                         <li>
-                            Your information may be shared internally only with
-                            staff responsible for check-in, stay experience, or
-                            emergency support.
+                            Data may be shared internally only with authorized
+                            staff responsible for inquiries, customer support,
+                            or compliance purposes.
                         </li>
                         <li>
-                            Communication related to bookings, feedback, or
-                            essential updates may be sent to your registered
-                            email or phone number.
+                            Communication regarding inquiries, feedback,
+                            updates, or important announcements may be sent to
+                            your registered email or phone number.
                         </li>
                         <li>
-                            Any payment data is processed securely via
-                            third-party payment gateways. We do not store card
-                            or UPI details on our servers.
+                            Any media content, such as images or videos shared
+                            with us, will only be used with explicit consent for
+                            promotional or informational purposes.
                         </li>
                         <li>
-                            Photos or videos captured at the property may be
-                            used in promotional content only with explicit guest
-                            consent.
+                            Users may request access to, correction of, or
+                            deletion of their personal data by contacting Vee
+                            Gee Exports Limited’s support team.
                         </li>
                         <li>
-                            Guests may request access to or deletion of their
-                            personal data by contacting WaterRock’s support
-                            team.
-                        </li>
-                        <li>
-                            This privacy policy may be updated from time to
-                            time. All changes will be reflected on this page.
+                            This Privacy Policy may be updated periodically. All
+                            changes will be posted on this page with the
+                            effective date.
                         </li>
                     </ul>
                 </div>
