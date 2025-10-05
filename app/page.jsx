@@ -8,8 +8,10 @@ import CTA from "@/components/CTA"
 import FancyButton from "@/components/FancyButton"
 import FancyHeading from "@/components/FancyHeading"
 import HeroGallery from "@/components/HeroGallery"
+import ImageLink from "@/components/ImageLink"
 
-import { CONTACT_URL, CONTENT } from "@/app/constants"
+import { CATEGORIES, CONTACT_URL, CONTENT } from "@/app/constants"
+import { toTitleCase } from "@/app/utils"
 
 export default function HomePage() {
     return (
@@ -54,35 +56,15 @@ export default function HomePage() {
                         {CONTENT.homepage.products.subtitle}
                     </p>
                     <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {["Household", "Electrical", "Furniture"].map(
-                            (category) => (
-                                <div
-                                    className="relative overflow-hidden rounded-2xl shadow-sm"
-                                    key={category}
-                                >
-                                    <Link
-                                        href={`/products/${category.toLowerCase()}`}
-                                    >
-                                        <Image
-                                            src={`/images/products/${category.toLowerCase()}.webp`}
-                                            width={512}
-                                            height={512}
-                                            className="h-full w-full object-cover transition-all group-hover:scale-110"
-                                            alt=""
-                                            priority
-                                        />
-                                        <div className="z-1 group absolute top-0 flex h-full w-full flex-col bg-black/30 px-6 py-4 text-white transition-all">
-                                            <div className="mt-auto flex items-center">
-                                                <p className="max-w-[300px] text-2xl font-bold tracking-wide">
-                                                    {category}
-                                                </p>
-                                                <ArrowRightIcon className="ml-auto mr-1 size-8 transition-transform group-hover:translate-x-4" />
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                            )
-                        )}
+                        {Object.values(CATEGORIES).map((category) => (
+                            <ImageLink
+                                key={category}
+                                title={toTitleCase(category)}
+                                href={`/products/${category}`}
+                                imageSrc={`/images/products/${category}.webp`}
+                                priority
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
