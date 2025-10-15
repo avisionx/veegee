@@ -20,14 +20,11 @@ export default function HomePage() {
                 <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-3 lg:gap-16">
                     <div className="space-y-6">
                         <h1 className="font-heading text-4xl leading-tight sm:text-5xl md:text-6xl">
-                            Trusted, <br />
-                            <span className="text-primary">Reliable</span>{" "}
-                            &amp;&nbsp;
+                            Your <span className="text-primary">Trusted</span>{" "}
                             <span className="font-heading italic text-secondary">
-                                Affordable
-                            </span>
-                            <br />
-                            Since 2002.
+                                Global
+                            </span>{" "}
+                            Partner <br /> Since 2002.
                         </h1>
                         <p className="text-black/80 md:text-lg">
                             {CONTENT.homepage.hero.subtitle}

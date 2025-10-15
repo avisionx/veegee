@@ -29,23 +29,23 @@ export const CONTENT = {
     homepage: {
         hero: {
             subtitle:
-                "Serving Africa, the Caribbean, and beyond with trusted FMCG solutions from India to the world.",
+                "Serving Africa, the Caribbean, the Middle East, and beyond with quality products from India.",
             scrollText: "Scroll to browse our product range",
         },
         products: {
             title: "Our Product Range",
             subtitle:
-                "Explore our diverse range of high-quality FMCG, household, electrical, and furniture products — trusted by partners across Africa, the Caribbean, and beyond.",
+                "Explore our diverse range of high-quality household, electrical, and furniture products - sourced from reliable manufacturers, ensuring consistent quality, competitive pricing, and timely delivery to our partners.",
         },
         whyChoose: {
             title: "Why Partner With Us?",
             subtitle:
-                "Delivering trusted FMCG, household, electrical, and furniture solutions globally — reliability, quality, and value you can count on.",
+                "Partnering with us means working with a team that values reliability, consistency, and long-term success - built on trust and a deep understanding of global trade.",
             features: [
-                "Over 20 years of experience in exporting high-quality products across Africa, the Caribbean, and beyond.",
-                "Strong partnerships with globally recognized brands like Nestlé, Unilever, Reckitt, and Bic to ensure product quality and trust.",
-                "Flexible and tailored solutions for each market — competitive pricing, timely delivery, and attentive customer support.",
-                "Global footprint with offices in India, China, and Hong Kong, ensuring seamless operations and supply chain efficiency.",
+                "Global Reach: Supplying quality products to markets across Africa, the Caribbean, and the Middle East.",
+                "Diverse Range: Offering household, electrical, and furniture products to meet every market need.",
+                "Strong Sourcing: Delivering premium quality with exceptional value and competitive strength.",
+                "Mutual Growth: Building transparent, lasting partnerships that create shared success.",
             ],
         },
     },
@@ -53,24 +53,25 @@ export const CONTENT = {
         hero: {
             title: "About Us",
             subtitle:
-                "Discover Vee Gee Exports Limited — delivering trusted FMCG, household, electrical, and furniture products globally since 2002.",
+                "Since 2002, Vee Gee Exports Limited has been transforming the way businesses access high-quality household, electrical, and furniture products worldwide. What started as a vision to provide reliable, premium solutions has grown into a global network of satisfied clients and trusted partners.",
+            para1: "Our commitment goes beyond products - we focus on delivering consistency, reliability, and tailored solutions that help businesses thrive. With every shipment, we bring not just products, but peace of mind and a promise of excellence.",
+            para2: "At Vee Gee Exports Limited, your business is our priority, and global service is our standard.",
             features: [
                 {
-                    title: "Mission",
+                    title: "Our Mission",
                     description:
-                        "To provide high-quality products that meet the needs of global markets while fostering long-term partnerships built on trust and reliability.",
+                        "To provide businesses worldwide with high-quality household, electrical, and furniture products through reliable sourcing, timely delivery, and exceptional customer service, fostering lasting partnerships built on trust and excellence.",
                     Icon: LeafIcon,
                 },
                 {
-                    title: "Vision",
+                    title: "Our Vision",
                     description:
-                        "To become a globally recognized leader in FMCG and home solutions, known for integrity, excellence, and customer-focused innovation.",
+                        "To be a leading global supplier recognized for quality, reliability, and innovation, setting the standard in household, electrical, and furniture solutions, while expanding our reach to serve every market with integrity and professionalism.",
                     Icon: EyeIcon,
                 },
                 {
-                    title: "Values",
-                    description:
-                        "Integrity, Customer-Centricity, Sustainability, and Long-Term Partnerships.",
+                    title: "Our Values",
+                    description: `• Quality First: Every product meets the highest standards. <br/>• Reliability: Consistent service that clients can depend on. <br/>• Integrity: Transparent and ethical business practices.`,
                     Icon: GemIcon,
                 },
             ],
@@ -78,9 +79,9 @@ export const CONTENT = {
         journey: {
             title: "Our Journey",
             subtitle:
-                "From a small office in Guangzhou, China, to a global FMCG export leader with HQ in Jaipur, India — our story is one of passion, growth, and excellence.",
-            para1: "Vee Gee Exports Limited was founded in 2002 by Mr. Girish Bhagtani to set new benchmarks in household, electrical, electronics, and furniture products. Over the years, we expanded into food, non-food, and personal care items, creating a portfolio that caters to diverse international markets. Our growth has been driven by trust, quality, and commitment to customer success.",
-            para2: "With offices in India, China, and Hong Kong, and export operations across Africa, the Caribbean, and the Levant, we have built strategic partnerships with global brands like Nestlé, Unilever, Reckitt, and Bic. Our mission remains to provide affordable, reliable, and high-quality products while creating sustainable growth for our partners and customers worldwide.",
+                "From a small office in Guangzhou, China, to a global leader in household, electrical, and furniture products, Vee Gee Exports Limited has built a story of passion, growth, and excellence.",
+            para1: "Founded in 2002 by Mr. Girish Bhagtani and Mr. Ravi Choithani, our mission has always been to set new benchmarks in quality, reliability, and customer satisfaction. Over the years, we have expanded our presence with offices in India, China, Hong Kong, and the UAE, serving clients across Africa, the Caribbean, the Middle East, and the Levant.",
+            para2: "Through strategic partnerships and a commitment to excellence, we deliver products and solutions that help businesses thrive worldwide.",
         },
         location: {
             title: "Our Global Presence",
@@ -101,11 +102,11 @@ export const CONTENT = {
         },
     },
     cta: {
-        titlePart1: "Your",
-        titlePart2: "Global Supply",
-        titlePart3: "Starts Here.",
+        titlePart1: "Global Connections,",
+        titlePart2: "Trusted Partnerships.",
+        titlePart3: "",
         subtitle:
-            "Partner with Vee Gee Exports Limited for trusted, reliable, and affordable FMCG, household, electrical, and furniture solutions worldwide.",
+            "Vee Gee Exports Limited bridges markets with reliable household, electrical, and furniture products — built on trust, consistency, and long-term collaboration.",
     },
     tnc: {
         title: "Terms & Conditions",

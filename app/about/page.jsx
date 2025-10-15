@@ -18,6 +18,12 @@ export default function AboutPage() {
                     title={CONTENT.about.hero.title}
                     subtitle={CONTENT.about.hero.subtitle}
                 />
+                <div className="mx-auto -mt-8 mb-4 max-w-5xl text-center text-black/70 md:text-lg">
+                    {CONTENT.about.hero.para1}
+                </div>
+                <p className="mx-auto mb-16 max-w-5xl text-center text-black/70 md:text-lg">
+                    {CONTENT.about.hero.para2}
+                </p>
                 <div className="mb-20 grid grid-cols-1 gap-6 lg:grid-cols-3">
                     {CONTENT.about.hero.features.map(
                         ({ title, description, Icon }, index) => (
@@ -33,7 +39,12 @@ export default function AboutPage() {
                                         className={`${index % 2 == 0 ? "text-secondary" : "text-primary"} absolute right-0 size-10`}
                                     />
                                 </div>
-                                <p className="text-black/70">{description}</p>
+                                <p
+                                    className="text-black/70"
+                                    dangerouslySetInnerHTML={{
+                                        __html: description,
+                                    }}
+                                />
                             </div>
                         )
                     )}
@@ -42,10 +53,10 @@ export default function AboutPage() {
                 <p className="mx-auto mt-4 max-w-3xl text-center text-black/70 md:text-lg">
                     {CONTENT.about.journey.subtitle}
                 </p>
-                <div className="mx-auto mt-16 max-w-5xl text-center text-black/70 md:text-lg">
+                <div className="mx-auto mt-4 max-w-5xl text-center text-black/70 md:text-lg">
                     {CONTENT.about.journey.para1}
                 </div>
-                <div className="mx-auto mb-16 mt-8 max-w-5xl text-center text-black/70 md:text-lg">
+                <div className="mx-auto mb-16 mt-4 max-w-5xl text-center text-black/70 md:text-lg">
                     {CONTENT.about.journey.para2}
                 </div>
             </section>
