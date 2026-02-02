@@ -120,251 +120,1996 @@ export const CONTENT = {
 }
 
 export const CATEGORIES = {
-    household: "household",
-    electrical: "electrical",
+    "electrical-items": "electrical-items",
     furniture: "furniture",
+    "hardware-items": "hardware-items",
+    "home-appliance": "home-appliance",
+    "household-items": "household-items",
+    lighting: "lighting",
 }
 
 export const CATEGORIES_SUBTITLE = {
-    [CATEGORIES.household]:
-        "Explore our wide range of cookware, utensils, storage solutions, and everyday household essentials designed for quality, durability, and affordability.",
-    [CATEGORIES.electrical]:
-        "From lighting and wiring to solar equipment and appliances — discover reliable electrical solutions built for homes, businesses, and industries.",
+    [CATEGORIES["electrical-items"]]:
+        "Switches, sockets, wiring, and electrical accessories built for reliable everyday use.",
     [CATEGORIES.furniture]:
-        "Stylish, functional, and durable furniture for indoor, outdoor, and commercial spaces — crafted to bring comfort and utility to every environment.",
+        "Indoor, outdoor, and office furniture with durable construction and modern finishes.",
+    [CATEGORIES["hardware-items"]]:
+        "Building materials, tools, and hardware supplies for construction and maintenance.",
+    [CATEGORIES["home-appliance"]]:
+        "Home appliances and kitchen electronics designed for daily comfort and convenience.",
+    [CATEGORIES["household-items"]]:
+        "Everyday household essentials including cookware, storage, and home comforts.",
+    [CATEGORIES.lighting]:
+        "Indoor, outdoor, and solar lighting solutions for homes, businesses, and projects.",
 }
 
 export const PRODUCTS = {
-    [CATEGORIES.household]: {
-        "Cookware & Utensils": [
-            { id: "VG-1001", name: "3 PCS NICE DAY" },
-            { id: "VG-1002", name: "6 PCS STRAINER HEAVY" },
-            { id: "VG-1003", name: "6 PCS STRAINER MESH" },
-            { id: "VG-1004", name: "DOUBLE FRYPAN" },
-            { id: "VG-1005", name: "FRYPAN" },
-            { id: "VG-1014", name: "PRESSURE COOKER" },
-            { id: "VG-1018", name: "5 PCS BOWL SET" },
-            { id: "VG-1023", name: "14 PCS ALU POT" },
-            { id: "VG-1025", name: "6 PCS SS BOWL SET WITH GRATER PLATE" },
-            { id: "VG-1026", name: "5 PCS SS COLANDER SET" },
-            { id: "VG-1027", name: "STAINLESS STEEL POT (TIFFIN)" },
-            { id: "VG-1047", name: "CUTLERY ITEMS (Spoon, Fork, Knife, etc.)" },
-            { id: "VG-1048", name: "SOLIGEN KNIFE" },
-            { id: "VG-1049", name: "COOKWARE SET" },
-            { id: "VG-1050", name: "CHAFING DISH" },
-            { id: "VG-1020", name: "DIECAST COOKWARE" },
-            { id: "VG-1021", name: "OPALWARE" },
-            { id: "VG-1031", name: "4 PCS FOOD WARMER" },
-            { id: "VG-1058", name: "CUTTING BOARD" },
-            { id: "VG-1045", name: "PAPER CUP" },
-        ],
-        "Storage & Organization": [
-            { id: "VG-1019", name: "CEREAL DISPENSER" },
-            { id: "VG-1024", name: "SPACE SAVER RACK" },
-            { id: "VG-1038", name: "14 PCS STORAGE BOX" },
-            { id: "VG-1040", name: "STORAGE RACK" },
-            { id: "VG-1043", name: "SHOERACK" },
-            { id: "VG-1054", name: "COIN BOX" },
-            { id: "VG-1055", name: "GIFT BAG" },
-            { id: "VG-1056", name: "GIFT WRAPPER ROLL" },
-            { id: "VG-1052", name: "3 PCS SUITCASE SET" },
-        ],
-        "Kitchen & Gas Appliances": [
-            { id: "VG-1006", name: "TR 219 GAS COOKER" },
-            { id: "VG-1007", name: "GAS REGULATOR" },
-            { id: "VG-1008", name: "GAS CYLINDER" },
-            { id: "VG-1009", name: "GAS PIPE" },
-            { id: "VG-1010", name: "GAS STOVE" },
-            { id: "VG-1011", name: "HOT PLATE" },
-            { id: "VG-1012", name: "WATER PUMP" },
-            { id: "VG-1013", name: "PORTABLE GAS STOVE" },
-            { id: "VG-1017", name: "WATER KETTLE" },
-            { id: "VG-1041", name: "METAL FLASK" },
-            { id: "VG-1051", name: "LIQUID DISPENSER" },
-            { id: "VG-1035", name: "CAMRY SCALE 20KG" },
-            { id: "VG-1036", name: "DIGITAL SCALE" },
-            { id: "VG-1037", name: "SMALL SCALE 10KG" },
-            { id: "VG-1046", name: "SCRUBBER" },
-            { id: "VG-1028", name: "MEAT MINCER" },
-            { id: "VG-1029", name: "CORN GRINDER" },
-            { id: "VG-1030", name: "PASTA MAKER" },
-            { id: "VG-1042", name: "FOOD PROCESSOR" },
-            { id: "VG-1044", name: "COFFEE GRINDER" },
-        ],
-        "Home Comforts": [
-            { id: "VG-1016", name: "TABLE MATE" },
-            { id: "VG-1022", name: "BEACH CHAIR" },
-            { id: "VG-1034", name: "BEACH UMBRELLA" },
-            { id: "VG-1039", name: "MATTRESS" },
-            { id: "VG-1053", name: "BLANKET" },
-        ],
-    },
-    [CATEGORIES.electrical]: {
-        "Lighting & Solar": [
-            { id: "VG-4001", name: "LED BULB" },
-            { id: "VG-4002", name: "LED T BULB" },
-            { id: "VG-4003", name: "LED PANEL LIGHT" },
-            { id: "VG-4004", name: "LED DOWN LIGHT" },
-            { id: "VG-4005", name: "LED SURFACE PANEL LIGHT" },
-            { id: "VG-4006", name: "LED FILAMENT LAMP" },
-            { id: "VG-4007", name: "CLEAR BULB 100W/200W" },
-            { id: "VG-4008", name: "COLOUR BULB" },
-            { id: "VG-4013", name: "LED STRIP LIGHT" },
-            { id: "VG-4014", name: "LED SOLAR LIGHT" },
-            { id: "VG-4015", name: "SOLAR PANEL" },
-            { id: "VG-4016", name: "SOLAR INVERTER" },
-            { id: "VG-4021", name: "SOLAR BATTERY" },
-            { id: "VG-4020", name: "LED DC LIGHT" },
-            { id: "VG-4022", name: "LED EMERGENCY LIGHT" },
-            { id: "VG-4023", name: "ENRGY SAVER" },
-            { id: "VG-4024", name: "SENSOR" },
-        ],
-        "Wiring & Accessories": [
-            { id: "VG-4009", name: "PVC PIPE" },
-            { id: "VG-4010", name: "PHOTO MCB BOX" },
-            { id: "VG-4011", name: "DISTRIBUTION BOARD" },
-            { id: "VG-4012", name: "ELECTRIC CABLE" },
-            { id: "VG-4018", name: "PVC BOX AND METAL BOX" },
-            { id: "VG-4019", name: "SWITCH SOCKET" },
-            { id: "VG-4025", name: "LAMPHOLDER" },
-            { id: "VG-4026", name: "INSULATOR" },
-            { id: "VG-4027", name: "EXTENSION" },
-            { id: "VG-4028", name: "CABLE REEL" },
-            { id: "VG-4029", name: "CABLE TRAY" },
-            { id: "VG-4033", name: "TELEPHONE WIRE" },
-            { id: "VG-4034", name: "TV CABLE WITH CONNECTOR" },
-            { id: "VG-4035", name: "LAN CABLE" },
-            { id: "VG-4036", name: "CHANGE OVER SWITCH" },
-        ],
-        "Small Electrical Appliances": [
-            { id: "VG-2001", name: "WASHING MACHINE" },
-            { id: "VG-2002", name: "REFRIGERATOR" },
-            { id: "VG-2003", name: "CHEST FREEZER" },
-            { id: "VG-2004", name: "LED SMART TV" },
-            { id: "VG-2005", name: "BLENDER" },
-            { id: "VG-2006", name: "ELECTRIC KETTLE" },
-            { id: "VG-2007", name: "PIZZA PAN" },
-            { id: "VG-2008", name: "STAND FAN" },
-            { id: "VG-2009", name: "WALL FAN" },
-            { id: "VG-2010", name: "VACCUM CLEANER" },
-            { id: "VG-2011", name: "WATER DISPENSER" },
-            { id: "VG-2012", name: "PP KETTLE" },
-            { id: "VG-2013", name: "ELECTRIC STOVE" },
-            { id: "VG-2014", name: "DEEP FRYER" },
-            { id: "VG-2015", name: "COFFEE MAKER" },
-            { id: "VG-2016", name: "HUMIDIFIER" },
-            { id: "VG-2017", name: "MICROWAVE OVEN" },
-            { id: "VG-2018", name: "HOT PLATE OVEN" },
-            { id: "VG-2019", name: "HAIR DRYER" },
-            { id: "VG-2020", name: "EXPRESSO COFFEE MAKER" },
-            { id: "VG-2021", name: "PUMP STEAM IRON STATION" },
-            { id: "VG-2022", name: "BREAD TOASTER" },
-            { id: "VG-2023", name: "COFFEE GRINDER" },
-            { id: "VG-2024", name: "FOOD PROCESSOR" },
-            { id: "VG-2025", name: "7 IN 1 GRINDER BLENDER" },
-            { id: "VG-2026", name: "TEA POT KETTLE" },
-            { id: "VG-2027", name: "STAND MIXER" },
-            { id: "VG-2028", name: "HEAVY IRON" },
-            { id: "VG-2029", name: "5 IN 1 GRINDER BLENDER" },
-        ],
-        "Other Electricals": [
-            { id: "VG-4017", name: "EX-FAN & IND FAN" },
-            { id: "VG-4030", name: "INSECT KILLER" },
-            { id: "VG-4031", name: "VOLTAGE PROTECTOR" },
-            { id: "VG-4032", name: "AUTOMATIC VOLTAGE REGULATOR" },
-        ],
-    },
-    [CATEGORIES.furniture]: {
-        "Indoor Furniture": [
-            { id: "VG-1016", name: "TABLE MATE" },
-            { id: "VG-1024", name: "SPACE SAVER RACK" },
-            { id: "VG-1040", name: "STORAGE RACK" },
-            { id: "VG-1043", name: "SHOERACK" },
-            { id: "VG-1052", name: "3 PCS SUITCASE SET" },
-        ],
-        "Outdoor Furniture": [
-            { id: "VG-1022", name: "BEACH CHAIR" },
-            { id: "VG-1034", name: "BEACH UMBRELLA" },
-        ],
-        "Home Comfort": [
-            { id: "VG-1039", name: "MATTRESS" },
-            { id: "VG-1053", name: "BLANKET" },
-        ],
-        "Tools & Hardware": [
-            { id: "VG-3001", name: "EMERY CLOTH TYPE 115MM*45M 60#" },
-            { id: "VG-3002", name: "PAPER TYPE ROLLS 115MM*45M 60#" },
-            { id: "VG-3003", name: "GRINDING DISC FOR METAL" },
+    "electrical-items": {
+        "OTHER ELECTRICAL ITEMS": [
             {
-                id: "VG-3004",
+                id: "1",
+                name: "PVC BOX AND METAL BOX",
+            },
+            {
+                id: "2",
+                name: "INSECT KILLER",
+            },
+            {
+                id: "3",
+                name: "AUTOMATIC VOLTAGE REGULATOR",
+            },
+            {
+                id: "4",
+                name: "SOLAR PANEL",
+            },
+            {
+                id: "5",
+                name: "SOLAR BATTERY",
+            },
+            {
+                id: "6",
+                name: "EX-FAN",
+            },
+            {
+                id: "7",
+                name: "INDUSTRIAL FAN",
+            },
+            {
+                id: "8",
+                name: "SOLAR INVERTER",
+            },
+            {
+                id: "9",
+                name: "SENSOR",
+            },
+            {
+                id: "10",
+                name: "LAMPHOLDER",
+            },
+        ],
+        "SWITCH AND SOCKET": [
+            {
+                id: "1",
+                name: "16A Euro socket",
+            },
+            {
+                id: "2",
+                name: "3*3 Blank Plate",
+            },
+            {
+                id: "3",
+                name: "1 gang 1 way switch",
+            },
+            {
+                id: "4",
+                name: "2 gang 1 way switch",
+            },
+            {
+                id: "5",
+                name: "3 gang 1 way switch",
+            },
+            {
+                id: "6",
+                name: "4 gang 1 way switch",
+            },
+            {
+                id: "7",
+                name: "5 gang 1 way switch",
+            },
+            {
+                id: "8",
+                name: "10A doorbell switch",
+            },
+            {
+                id: "9",
+                name: "20A DP water heater switch",
+            },
+            {
+                id: "10",
+                name: "15A switch socket",
+            },
+            {
+                id: "11",
+                name: "13A switch socket",
+            },
+            {
+                id: "12",
+                name: "13A switch socket",
+            },
+            {
+                id: "13",
+                name: "13A double switch socket",
+            },
+            {
+                id: "14",
+                name: "13A double switch socket with neon",
+            },
+            {
+                id: "15",
+                name: "13A multi socket",
+            },
+            {
+                id: "16",
+                name: "13A multi socket with neon",
+            },
+            {
+                id: "17",
+                name: "double 13A multi socket",
+            },
+            {
+                id: "18",
+                name: "double 13A multi socket with neon",
+            },
+            {
+                id: "19",
+                name: "13A multi socket with 2pin socket +neon",
+            },
+            {
+                id: "20",
+                name: "13A multi socket with USB port",
+            },
+            {
+                id: "21",
+                name: "16A 2 pin socket",
+            },
+            {
+                id: "22",
+                name: "16A double 2 pin socket",
+            },
+            {
+                id: "23",
+                name: "16A 1gang and 2 pin socket",
+            },
+            {
+                id: "24",
+                name: "16A 2gang and 2 pin socket",
+            },
+            {
+                id: "25",
+                name: "3*3 45A DP switch",
+            },
+            {
+                id: "26",
+                name: "3*6 45A DP switch",
+            },
+            {
+                id: "27",
+                name: "45A cooker with neon",
+            },
+            {
+                id: "28",
+                name: "TV",
+            },
+            {
+                id: "29",
+                name: "Satelite",
+            },
+            {
+                id: "30",
+                name: "TEL",
+            },
+            {
+                id: "31",
+                name: "1 gang speed dimmer switch",
+            },
+            {
+                id: "32",
+                name: "25A cooker connector",
+            },
+            {
+                id: "33",
+                name: "EXTENSION",
+            },
+            {
+                id: "34",
+                name: "VOLTAGE PROTECTOR",
+            },
+            {
+                id: "35",
+                name: "SOCKETS",
+            },
+        ],
+        "WIRE & ACCESSORIES": [
+            {
+                id: "1",
+                name: "PHOTO MCB BOX",
+            },
+            {
+                id: "2",
+                name: "DISTRIBUTION BOARD",
+            },
+            {
+                id: "3",
+                name: "ELECTRIC CABLE",
+            },
+            {
+                id: "4",
+                name: "INSULATOR",
+            },
+            {
+                id: "5",
+                name: "CABLE REEL",
+            },
+            {
+                id: "6",
+                name: "CABLE TRAY",
+            },
+            {
+                id: "7",
+                name: "TELEPHONE WIRE",
+            },
+            {
+                id: "8",
+                name: "COAXIAL CABLE",
+            },
+            {
+                id: "9",
+                name: "LAN CABLE",
+            },
+        ],
+    },
+    furniture: {
+        "INDOOR FURNITURE": [
+            {
+                id: "1",
+                name: "BED",
+            },
+            {
+                id: "2",
+                name: "SOFA",
+            },
+            {
+                id: "3",
+                name: "CABINET",
+            },
+            {
+                id: "4",
+                name: "DINING TABLE",
+            },
+            {
+                id: "5",
+                name: "CENTER TABLE",
+            },
+            {
+                id: "6",
+                name: "CONSOLE TABLE",
+            },
+            {
+                id: "7",
+                name: "SIDE TABLE",
+            },
+            {
+                id: "8",
+                name: "HIGH CHAIR",
+            },
+            {
+                id: "9",
+                name: "BEDROOM SET",
+            },
+            {
+                id: "10",
+                name: "SHOE RACK",
+            },
+            {
+                id: "11",
+                name: "TV TABLE",
+            },
+            {
+                id: "12",
+                name: "DRESSING TABLE",
+            },
+            {
+                id: "13",
+                name: "SOFA BED",
+            },
+            {
+                id: "14",
+                name: "MASSAGE CHAIR",
+            },
+            {
+                id: "15",
+                name: "BAR",
+            },
+            {
+                id: "16",
+                name: "RECLINER",
+            },
+            {
+                id: "17",
+                name: "MODULAR KITCHEN",
+            },
+            {
+                id: "18",
+                name: "STOOL",
+            },
+            {
+                id: "19",
+                name: "WARDROBE",
+            },
+            {
+                id: "20",
+                name: "BOOKSHELF",
+            },
+        ],
+        "OFFICE FURNITURE": [
+            {
+                id: "1",
+                name: "RECEPTION TABLE",
+            },
+            {
+                id: "2",
+                name: "CONFRENCE TABLE",
+            },
+            {
+                id: "3",
+                name: "COFFEE TABLE",
+            },
+            {
+                id: "4",
+                name: "WORK STATION",
+            },
+            {
+                id: "5",
+                name: "BOSS TABLE",
+            },
+            {
+                id: "6",
+                name: "SOFA",
+            },
+            {
+                id: "7",
+                name: "CABINET",
+            },
+            {
+                id: "8",
+                name: "MEETING TABLE",
+            },
+            {
+                id: "9",
+                name: "OFFICE CHAIR",
+            },
+            {
+                id: "10",
+                name: "METAL LOCKER",
+            },
+            {
+                id: "11",
+                name: "VISITOR SEATING AREA",
+            },
+        ],
+        "OUTDOOR FURNITURE": [
+            {
+                id: "1",
+                name: "Aluminum frame sofa set",
+            },
+            {
+                id: "2",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "3",
+                name: "Steel Corner sofa set",
+            },
+            {
+                id: "4",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "5",
+                name: "Steel corner sofa set (NON KD)",
+            },
+            {
+                id: "6",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "7",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "8",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "9",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "10",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "11",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "12",
+                name: "Steel 3pcs sofa set HOME DEPOT",
+            },
+            {
+                id: "13",
+                name: "Steel frame sofa set",
+            },
+            {
+                id: "14",
+                name: "Steel sofa set with USFR fabric",
+            },
+            {
+                id: "15",
+                name: "Steel corner sofa NON KD",
+            },
+            {
+                id: "16",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "17",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "18",
+                name: "Steel Corner sofa set",
+            },
+            {
+                id: "19",
+                name: "Steel sofa set with 10cm seat cushion",
+            },
+            {
+                id: "20",
+                name: "Steel sofa set with 10cm seat cushion",
+            },
+            {
+                id: "21",
+                name: "Steel corner sofa set-NON KD",
+            },
+            {
+                id: "22",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "23",
+                name: "Aluminum 3pcs sofa set",
+            },
+            {
+                id: "24",
+                name: "Steel swivel sofa set HOME DEPOT",
+            },
+            {
+                id: "25",
+                name: "Steel sofa set",
+            },
+            {
+                id: "26",
+                name: "Aluminum rope sofa set red color",
+            },
+            {
+                id: "27",
+                name: "Steel corner sofa set UKFR cushion ALDI-UK",
+            },
+            {
+                id: "28",
+                name: "Aluminum 7pcs corner sofa set-NON KD",
+            },
+            {
+                id: "29",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "30",
+                name: "6PC STEEL SOFA SET",
+            },
+            {
+                id: "31",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "32",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "33",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "34",
+                name: "Steel chaise lounger sofa set",
+            },
+            {
+                id: "35",
+                name: "Steel 5pc sofa set",
+            },
+            {
+                id: "36",
+                name: "Aluminum 6pc sofa set with cover",
+            },
+            {
+                id: "37",
+                name: "Aluminum 3pc sofa set with cover",
+            },
+            {
+                id: "38",
+                name: "Steel 7pcs sofa set",
+            },
+            {
+                id: "39",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "40",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "41",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "42",
+                name: "Aluminum big rope sofa set 53999",
+            },
+            {
+                id: "43",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "44",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "45",
+                name: "Steel bistro set",
+            },
+            {
+                id: "46",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "47",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "48",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "49",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "50",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "51",
+                name: "Aluminum corner sofa set",
+            },
+            {
+                id: "52",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "53",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "54",
+                name: "Steel 4pc KD sofa set",
+            },
+            {
+                id: "55",
+                name: "Steel 4pc KD sofa set",
+            },
+            {
+                id: "56",
+                name: "Steel 6pc sofa set",
+            },
+            {
+                id: "57",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "58",
+                name: "Steel 7pc sofa set",
+            },
+            {
+                id: "59",
+                name: "Aluminum & steel sofa set",
+            },
+            {
+                id: "60",
+                name: "Steel 5pc sofa set",
+            },
+            {
+                id: "61",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "62",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "63",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "64",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "65",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "66",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "67",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "68",
+                name: "Steel 4pcs sofa set",
+            },
+            {
+                id: "69",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "70",
+                name: "Steel 5pc sofa set",
+            },
+            {
+                id: "71",
+                name: "Steel sofa set",
+            },
+            {
+                id: "72",
+                name: "Steel sofa set",
+            },
+            {
+                id: "73",
+                name: "Steel sofa set",
+            },
+            {
+                id: "74",
+                name: "Steel sofa set",
+            },
+            {
+                id: "75",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "76",
+                name: "Steel 3pcs sofa set rocking function HOME DEPOT",
+            },
+            {
+                id: "77",
+                name: "Steel 3pcs sofa set rocking function HOME DEPOT",
+            },
+            {
+                id: "78",
+                name: "Steel 4pc sofa set HOME DEPOT",
+            },
+            {
+                id: "79",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "80",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "81",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "82",
+                name: "Aluminum sofa set",
+            },
+            {
+                id: "83",
+                name: "Steel 4pc KD sofa set",
+            },
+            {
+                id: "84",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "85",
+                name: "Steel sofa set",
+            },
+            {
+                id: "86",
+                name: "Steel 8pc sofa set",
+            },
+            {
+                id: "87",
+                name: "Steel 4pc corner sofa set",
+            },
+            {
+                id: "88",
+                name: "Steel sofa set",
+            },
+            {
+                id: "89",
+                name: "Steel corner sofa set-UKFR CUSHION",
+            },
+            {
+                id: "90",
+                name: "Polywood 3pcs sofa set",
+            },
+            {
+                id: "91",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "92",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "93",
+                name: "Steel corner sofa set",
+            },
+            {
+                id: "94",
+                name: "Steel 4pc sofa set",
+            },
+            {
+                id: "95",
+                name: "Steel 4pc sofa set",
+            },
+        ],
+    },
+    "hardware-items": {
+        "BUILDING MATERIAL": [
+            {
+                id: "1",
+                name: "WELDED PIPE",
+            },
+            {
+                id: "2",
+                name: "IRON ANGLE BAR",
+            },
+            {
+                id: "3",
+                name: "REBAR",
+            },
+            {
+                id: "4",
+                name: "SEAMLESS PIPE",
+            },
+            {
+                id: "5",
+                name: "H BEAM",
+            },
+            {
+                id: "6",
+                name: "ANGLE",
+            },
+            {
+                id: "7",
+                name: "CHANNEL",
+            },
+            {
+                id: "8",
+                name: "SQUARE TUBE",
+            },
+            {
+                id: "9",
+                name: "GI PIPE",
+            },
+            {
+                id: "10",
+                name: "GI PIPE FITTINGS",
+            },
+            {
+                id: "11",
+                name: "H BEAM",
+            },
+            {
+                id: "12",
+                name: "STAINLESS STEEL STRAP",
+            },
+            {
+                id: "13",
+                name: "STAINLESS STEEL ANGLE",
+            },
+            {
+                id: "14",
+                name: "STAINLESS STEEL PIPE",
+            },
+            {
+                id: "15",
+                name: "STAINLESS STEEL CHANNEL",
+            },
+            {
+                id: "16",
+                name: "STAINLESS STEEL BAR",
+            },
+            {
+                id: "17",
+                name: "STAINLESS STEEL FLAT",
+            },
+            {
+                id: "18",
+                name: "ALUMINUM PLATE",
+            },
+            {
+                id: "19",
+                name: "ALUMINUM ROD",
+            },
+            {
+                id: "20",
+                name: "ALUMINUM PIPE",
+            },
+            {
+                id: "21",
+                name: "COPPER PLATE",
+            },
+            {
+                id: "22",
+                name: "COPPER ROD",
+            },
+            {
+                id: "23",
+                name: "COPPER PIPE",
+            },
+            {
+                id: "24",
+                name: "PVC PIPE",
+            },
+            {
+                id: "25",
+                name: "PVC FITTINGS",
+            },
+            {
+                id: "26",
+                name: "CABLE TRAY",
+            },
+            {
+                id: "27",
+                name: "CABLE TRAY FITTINGS",
+            },
+            {
+                id: "28",
+                name: "PVC TRUNCKING",
+            },
+            {
+                id: "29",
+                name: "ROOFING SHEET",
+            },
+            {
+                id: "30",
+                name: "ROOFING TILE",
+            },
+            {
+                id: "31",
+                name: "FLASH BAND",
+            },
+            {
+                id: "32",
+                name: "PLYWOOD",
+            },
+            {
+                id: "33",
+                name: "HARDBOARD",
+            },
+            {
+                id: "34",
+                name: "PVC PANEL / WPC GRILL",
+            },
+            {
+                id: "35",
+                name: "WPC DOOR",
+            },
+            {
+                id: "36",
+                name: "HEAD PAN",
+            },
+            {
+                id: "37",
+                name: "KITHCEN SINK",
+            },
+            {
+                id: "38",
+                name: "FLEXIBLE TUBE",
+            },
+            {
+                id: "39",
+                name: "FAUCETS",
+            },
+            {
+                id: "40",
+                name: "ANGLE VALVE",
+            },
+            {
+                id: "41",
+                name: "SHOWER",
+            },
+            {
+                id: "42",
+                name: "WC",
+            },
+            {
+                id: "43",
+                name: "WASHBASIN",
+            },
+            {
+                id: "44",
+                name: "SAFETY HELMET",
+            },
+            {
+                id: "45",
+                name: "SCARPPER",
+            },
+            {
+                id: "46",
+                name: "WALL SCRAPPER",
+            },
+            {
+                id: "47",
+                name: "HINGES",
+            },
+            {
+                id: "48",
+                name: "DOOR LOCK",
+            },
+            {
+                id: "49",
+                name: "6 TURN LOCK",
+            },
+            {
+                id: "50",
+                name: "CK LOCK",
+            },
+            {
+                id: "51",
+                name: "PAINT BRUSH",
+            },
+            {
+                id: "52",
+                name: "PAINT ROLLER",
+            },
+            {
+                id: "53",
+                name: "PLUMBING TAPE",
+            },
+            {
+                id: "54",
+                name: "RAINBOOT",
+            },
+            {
+                id: "55",
+                name: "SAFETY SHOE",
+            },
+            {
+                id: "56",
+                name: "EXTENSION SOCKET",
+            },
+            {
+                id: "57",
+                name: "SAFETY JACKET",
+            },
+            {
+                id: "58",
+                name: "WIRE MESH",
+            },
+            {
+                id: "59",
+                name: "FASTNERS",
+            },
+            {
+                id: "60",
+                name: "WELDING GLOVES",
+            },
+            {
+                id: "61",
+                name: "MESH",
+            },
+            {
+                id: "62",
+                name: "GREEN SHEDDING NET",
+            },
+            {
+                id: "63",
+                name: "WIRE NAIL",
+            },
+            {
+                id: "64",
+                name: "CONCRETE NAIL",
+            },
+            {
+                id: "65",
+                name: "ROOFING NAIL",
+            },
+            {
+                id: "66",
+                name: "CARPANTER SAW",
+            },
+            {
+                id: "67",
+                name: "EAGLE SHOVEL",
+            },
+            {
+                id: "68",
+                name: "LAMPHOLDER",
+            },
+            {
+                id: "69",
+                name: "REVERSE SWITCH",
+            },
+            {
+                id: "70",
+                name: "SWITCHES",
+            },
+            {
+                id: "71",
+                name: "SOCKETS",
+            },
+            {
+                id: "72",
+                name: "ELECTRIC CABLE",
+            },
+            {
+                id: "73",
+                name: "UTILITY CUP",
+            },
+            {
+                id: "74",
+                name: "ROUND CUP",
+            },
+        ],
+        EQUIPMENT: [
+            {
+                id: "1",
+                name: "PAINT ROLLER",
+            },
+            {
+                id: "2",
+                name: "BABY PAINT ROLLER",
+            },
+            {
+                id: "3",
+                name: "PAINT BRUSH",
+            },
+            {
+                id: "4",
+                name: "PRUNIN SHEAR",
+            },
+            {
+                id: "5",
+                name: "COLT TAPE",
+            },
+            {
+                id: "6",
+                name: "OPEN MEASURING TAPE",
+            },
+        ],
+        "HAND TOOLS": [
+            {
+                id: "1",
+                name: "TAIWAN TROWEL",
+            },
+            {
+                id: "2",
+                name: "MANNESMAN TROWEL",
+            },
+            {
+                id: "3",
+                name: "3PC Plier Sets",
+            },
+            {
+                id: "4",
+                name: "40PC Combination Socket Set",
+            },
+            {
+                id: "5",
+                name: "BLACK TRI SQUARE 16*24*1.4MM",
+            },
+            {
+                id: "6",
+                name: "SILICON GUN",
+            },
+            {
+                id: "7",
+                name: "BOW SAW 0.8MM",
+            },
+            {
+                id: "8",
+                name: 'DYGT HAMMER 16"',
+            },
+            {
+                id: "9",
+                name: "FISHER PLUG 6MM WITH CAP",
+            },
+            {
+                id: "10",
+                name: "FISHER PLUG 8MM",
+            },
+            {
+                id: "11",
+                name: "FLICKER MACHINE",
+            },
+            {
+                id: "12",
+                name: "PUR FIBER TROWEL 18*32 200G",
+            },
+            {
+                id: "13",
+                name: 'SICKLE 16"',
+            },
+            {
+                id: "14",
+                name: "SOLDERING IRON 60W",
+            },
+            {
+                id: "15",
+                name: 'STAREX HAMMER 16"',
+            },
+            {
+                id: "16",
+                name: "WHEEL BARROW 3800",
+            },
+            {
+                id: "17",
+                name: "WIRE BRUSH 4*15*12 PLASTIC HANDLE",
+            },
+            {
+                id: "18",
+                name: "WIRE BRUSH 4*15*12 WOOD HANDLE",
+            },
+            {
+                id: "19",
+                name: 'YATO HAMMER 16"',
+            },
+            {
+                id: "20",
+                name: 'VISE GRIP 7"',
+            },
+            {
+                id: "21",
+                name: '10"SIDE SCRAPER',
+            },
+            {
+                id: "22",
+                name: "6-22 10PC SPARK PLUG WRENCH",
+            },
+            {
+                id: "23",
+                name: 'PROFESSIOANL HAND SAW 16"',
+            },
+            {
+                id: "24",
+                name: 'PROFESSIOANL HAND SAW 18"',
+            },
+            {
+                id: "25",
+                name: 'PROFESSIOANL HAND SAW 20"',
+            },
+            {
+                id: "26",
+                name: 'PROFESSIOANL HAND SAW 22"',
+            },
+            {
+                id: "27",
+                name: "PROFESSIONAL HAND SAW 24''",
+            },
+            {
+                id: "28",
+                name: "POINTED TROWEL",
+            },
+            {
+                id: "29",
+                name: 'TOOL CASE 21"',
+            },
+            {
+                id: "30",
+                name: "33# HACKSAW FRAME",
+            },
+            {
+                id: "31",
+                name: "HEAVY DUTY PLIER",
+            },
+            {
+                id: "32",
+                name: "LIGHT DUTY PLIER",
+            },
+            {
+                id: "33",
+                name: "SCREWDRIVER SET",
+            },
+            {
+                id: "34",
+                name: "WIRE NAIL",
+            },
+            {
+                id: "35",
+                name: "CONCRETE NAIL",
+            },
+            {
+                id: "36",
+                name: "ROOFING NAIL",
+            },
+            {
+                id: "37",
+                name: "CHAIR NAIL",
+            },
+            {
+                id: "38",
+                name: "ALLEN KEY",
+            },
+            {
+                id: "39",
+                name: "CHIPBOARD SCREW",
+            },
+        ],
+        OTHERS: [
+            {
+                id: "1",
+                name: "EMERY CLOTH TYPE 115MM*45M 60#",
+            },
+            {
+                id: "2",
+                name: "PAPER TYPE ROLLS 115MM*45M 60#",
+            },
+            {
+                id: "3",
+                name: "GRINDNG DISC FOR METAL",
+            },
+            {
+                id: "4",
                 name: 'SEGMENT DIAMOND DISC 9" (230x2.4x7x22.23mm)',
             },
-            { id: "VG-3005", name: "TAIWAN TROWEL" },
-            { id: "VG-3006", name: "MANNESMAN TROWEL" },
-            { id: "VG-3007", name: "10KG SCALE" },
-            { id: "VG-3008", name: "GREEN SHEDDING NET 3M*50M 140 GSM" },
-            { id: "VG-3009", name: "PAINT ROLLER" },
-            { id: "VG-3015", name: "BABY PAINT ROLLER" },
-            { id: "VG-3016", name: "PAINT BRUSH" },
-            { id: "VG-3017", name: "PRUNING SHEAR" },
-            { id: "VG-3018", name: "COLT TAPE" },
-            { id: "VG-3019", name: "OPEN MEASURING TAPE" },
-            { id: "VG-3020", name: "1/2*1*20M WELDED WIRE MASH" },
-            { id: "VG-3021", name: "16L SPRAYER" },
-            { id: "VG-3022", name: "3PC PLIER SETS" },
-            { id: "VG-3023", name: "40PC Combination Socket Set" },
-            { id: "VG-3024", name: "BLACK TRI SQUARE" },
-            { id: "VG-3025", name: "SILICON GUN" },
-            { id: "VG-3026", name: "BOW SAW 0.8MM" },
-            { id: "VG-3027", name: "BUILDING LINE 100M 0.8MM" },
-            { id: "VG-3028", name: 'DYGT HAMMER 16"' },
-            { id: "VG-3029", name: "EARTH CLAMP 1670H" },
-            { id: "VG-3030", name: "EARTH ROD 14MM 1.2M" },
-            { id: "VG-3031", name: "ELECTRONIC PLATFORM SCALE 150 KG" },
-            { id: "VG-3032", name: "ELECTRONIC PLATFORM SCALE 200 KG" },
-            { id: "VG-3033", name: "FISHER PLUG 6MM WITH CAP" },
-            { id: "VG-3034", name: "FISHER PLUG 8MM" },
-            { id: "VG-3035", name: "FLICKER MACHINE" },
-            { id: "VG-3036", name: "HOSE PIPE 3/4 45M, 7.7KGS" },
-            { id: "VG-3037", name: "PUR FIBER TROWEL 18*32 200G" },
-            { id: "VG-3038", name: "PVC TRUNKING 16X16/0.58MM" },
-            { id: "VG-3039", name: "PVC TRUNKING 25x16/0.6MM" },
-            { id: "VG-3040", name: "PVC TRUNKING 39X19/0.8MM" },
-            { id: "VG-3041", name: "PVC TRUNKING 40X25/0.68MM" },
-            { id: "VG-3042", name: "PVC TRUNKING 50X50/1.2MM" },
-            { id: "VG-3043", name: 'SICKLE 16"' },
-            { id: "VG-3044", name: "SILICON SEALANT BLACK" },
-            { id: "VG-3045", name: "SILICON SEALANT WHITE" },
-            { id: "VG-3046", name: "SOLDERING IRON 60W" },
-            { id: "VG-3047", name: 'STAREX HAMMER 16"' },
-            { id: "VG-3048", name: "WHEEL BARROW 3800" },
-            { id: "VG-3049", name: "WIRE BRUSH 4*15*12 PLASTIC HANDLE" },
-            { id: "VG-3050", name: "WIRE BRUSH 4*15*12 WOOD HANDLE" },
-            { id: "VG-3051", name: 'YATO HAMMER 16"' },
-            { id: "VG-3052", name: 'VISE GRIP 7"' },
-            { id: "VG-3053", name: '10" SIDE SCRAPER' },
-            { id: "VG-3054", name: "6-22 10PC SPARK PLUG WRENCH" },
-            { id: "VG-3055", name: "CHARCOAL IRON 752 1.8KG" },
-            { id: "VG-3056", name: 'PROFESSIONAL HAND SAW 16"' },
-            { id: "VG-3057", name: 'PROFESSIONAL HAND SAW 18"' },
-            { id: "VG-3058", name: 'PROFESSIONAL HAND SAW 20"' },
-            { id: "VG-3059", name: 'PROFESSIONAL HAND SAW 22"' },
-            { id: "VG-3060", name: 'PROFESSIONAL HAND SAW 24"' },
-            { id: "VG-3061", name: "POINTED TROWEL" },
-            { id: "VG-3062", name: 'TOOL CASE 21"' },
-            { id: "VG-3063", name: "33# HACKSAW FRAME" },
-            { id: "VG-3064", name: "HEAVY DUTY PLIER" },
-            { id: "VG-3065", name: "LIGHT DUTY PLIER" },
-            { id: "VG-3066", name: "PVC FITTINGS" },
-            { id: "VG-3067", name: "SCREWDRIVER SET" },
-            { id: "VG-3068", name: "WIRE NAIL" },
-            { id: "VG-3069", name: "CONCRETE NAIL" },
-            { id: "VG-3070", name: "ROOFING NAIL" },
-            { id: "VG-3071", name: "CHAIR NAIL" },
-            { id: "VG-3072", name: "LOCKS" },
-            { id: "VG-3073", name: "ALLEN KEY" },
-            { id: "VG-3074", name: "CHIPBOARD SCREW" },
-            { id: "VG-3075", name: "TILE SPACER" },
-            { id: "VG-3076", name: "TILE CUTTER" },
+            {
+                id: "5",
+                name: "10KG SCALE",
+            },
+            {
+                id: "6",
+                name: "GREEN SHEDDING NET 3M*50M 140 GSM",
+            },
+            {
+                id: "7",
+                name: "WARNING TAP 7CM*200M",
+            },
+            {
+                id: "8",
+                name: 'STERN CUTTING DISC 9"',
+            },
+            {
+                id: "9",
+                name: "BLACK SUNGLOVE",
+            },
+            {
+                id: "10",
+                name: "OXFORD HINGES GP",
+            },
+            {
+                id: "11",
+                name: "ARALDITE GLUE",
+            },
+            {
+                id: "12",
+                name: "1/2*1*20M WELDED WIRE MASH",
+            },
+            {
+                id: "13",
+                name: "16L SPRAYER",
+            },
+            {
+                id: "14",
+                name: "BUILDING LINE 100M 0.8MM",
+            },
+            {
+                id: "15",
+                name: "EARTH CLAMP 1670H",
+            },
+            {
+                id: "16",
+                name: "EARTH ROD 14MM 1.2M",
+            },
+            {
+                id: "17",
+                name: "ELECTRONIC PLATFORM SCALE 150 KG",
+            },
+            {
+                id: "18",
+                name: "ELECTRONIC PLATFORM SCALE 200 KG",
+            },
+            {
+                id: "19",
+                name: "HOSE PIPE 3/4 45M, 7.7KGS",
+            },
+            {
+                id: "20",
+                name: "SILICON SEALANT BLACK",
+            },
+            {
+                id: "21",
+                name: "SILICON SEALANT WHITE",
+            },
+            {
+                id: "22",
+                name: "CHARCOAL IRON 752 1.8KG",
+            },
+            {
+                id: "23",
+                name: "LOCKS",
+            },
+            {
+                id: "24",
+                name: "TILE SPACER",
+            },
+            {
+                id: "25",
+                name: "TILE CUTTER",
+            },
+        ],
+        "POWER TOOLS": [
+            {
+                id: "1",
+                name: "ANGLE GRINDER",
+            },
+            {
+                id: "2",
+                name: "CORDLESS ANGLE GRINDER",
+            },
+            {
+                id: "3",
+                name: "ELECTRIC DRILL",
+            },
+            {
+                id: "4",
+                name: "CORDLESS DRILL",
+            },
+            {
+                id: "5",
+                name: "ELECTRIC POLISHER",
+            },
+            {
+                id: "6",
+                name: "ELECTRIC SANDER",
+            },
+            {
+                id: "7",
+                name: "ELECTRIC CHAIN SAW",
+            },
+            {
+                id: "8",
+                name: "GASOLINE CHAINSAW",
+            },
+            {
+                id: "9",
+                name: "ELECTRIC MIXER",
+            },
+            {
+                id: "10",
+                name: "PPR WELDING MACHINE",
+            },
+            {
+                id: "11",
+                name: "ELECTRIC BLOWER",
+            },
+            {
+                id: "12",
+                name: "CUT OFF MACHINE",
+            },
+            {
+                id: "13",
+                name: "HIGH PRESSURE WASHER",
+            },
+            {
+                id: "14",
+                name: "ROTARY HAMMER",
+            },
+            {
+                id: "15",
+                name: "SPRAY GUN",
+            },
+            {
+                id: "16",
+                name: "HEAT GUN",
+            },
+            {
+                id: "17",
+                name: "WATER PUMP",
+            },
+            {
+                id: "18",
+                name: "CORDLESS CUTTER",
+            },
+            {
+                id: "19",
+                name: "CORDLESS SPRAY GUN",
+            },
+            {
+                id: "20",
+                name: "DEEP WELL PUMP",
+            },
+            {
+                id: "21",
+                name: "WATER HOSE REEL",
+            },
+            {
+                id: "22",
+                name: "OIL FREE AIR COMPRESSER",
+            },
+            {
+                id: "23",
+                name: "WELDING MACHINE",
+            },
+            {
+                id: "24",
+                name: "PORTABLE BLOWER",
+            },
+            {
+                id: "25",
+                name: "GASOLINE HAMMER AND DRILL",
+            },
+            {
+                id: "26",
+                name: "DEMOLITION HAMMER",
+            },
+            {
+                id: "27",
+                name: "CAR AIR COMPRESSOR",
+            },
+            {
+                id: "28",
+                name: "ELECTRIC SPRAY GUN",
+            },
+            {
+                id: "29",
+                name: "CORDLESS SPRAY GUN",
+            },
+        ],
+    },
+    "home-appliance": {
+        "HOME APPLIANCES": [
+            {
+                id: "VG-2001",
+                name: "WASHING MACHINE",
+            },
+            {
+                id: "VG-2002",
+                name: "REFRIGRATOR",
+            },
+            {
+                id: "VG-2003",
+                name: "CHEST FREEZER",
+            },
+            {
+                id: "VG-2004",
+                name: "LED SMART TV",
+            },
+            {
+                id: "VG-2005",
+                name: "BLENDER",
+            },
+            {
+                id: "VG-2006",
+                name: "ELECTRIC KETTLE",
+            },
+            {
+                id: "VG-2007",
+                name: "PIZZA PAN",
+            },
+            {
+                id: "VG-2008",
+                name: "STAND FAN",
+            },
+            {
+                id: "VG-2009",
+                name: "WALL FAN",
+            },
+            {
+                id: "VG-2010",
+                name: "VACCUM CLEANER",
+            },
+            {
+                id: "VG-2011",
+                name: "WATER DISPENSER",
+            },
+            {
+                id: "VG-2012",
+                name: "PP KETTLE",
+            },
+            {
+                id: "VG-2013",
+                name: "ELECTRIC STOVE",
+            },
+            {
+                id: "VG-2014",
+                name: "DEEP FRYER",
+            },
+            {
+                id: "VG-2015",
+                name: "COFFEE MAKER",
+            },
+            {
+                id: "VG-2016",
+                name: "HUMIDIFIER",
+            },
+            {
+                id: "VG-2017",
+                name: "MICROWAVE OVEN",
+            },
+            {
+                id: "VG-2018",
+                name: "HOT PLATE OVEN",
+            },
+            {
+                id: "VG-2019",
+                name: "HAIR DRYER",
+            },
+            {
+                id: "VG-2020",
+                name: "EXPRESSO COFFEE MAKER",
+            },
+            {
+                id: "1",
+                name: "PUMP STEAM IRON STATION",
+            },
+            {
+                id: "2",
+                name: "BREAD TOASTER",
+            },
+            {
+                id: "3",
+                name: "COFFEE GRINDER",
+            },
+            {
+                id: "4",
+                name: "FOOD PROCESSOR",
+            },
+            {
+                id: "5",
+                name: "7 IN 1 GRINDER BLENDER",
+            },
+            {
+                id: "6",
+                name: "TEA POT KETTLE",
+            },
+            {
+                id: "7",
+                name: "STAND MIXER",
+            },
+            {
+                id: "8",
+                name: "HEAVY IRON",
+            },
+            {
+                id: "9",
+                name: "5 IN 1 GRINDER BLENDER",
+            },
+        ],
+    },
+    "household-items": {
+        "HOUSEHOLD ITEMS": [
+            {
+                id: "1",
+                name: "3 PCS NICE DAY",
+            },
+            {
+                id: "2",
+                name: "6 PCS STRAINER HEAVY",
+            },
+            {
+                id: "3",
+                name: "6 PCS STRAINER MESH",
+            },
+            {
+                id: "4",
+                name: "DOUBLE FRYPAN",
+            },
+            {
+                id: "5",
+                name: "FRYPAN",
+            },
+            {
+                id: "6",
+                name: "TR 219 GAS COOKER",
+            },
+            {
+                id: "7",
+                name: "GAS REGULATOR",
+            },
+            {
+                id: "8",
+                name: "GAS CYLINDER",
+            },
+            {
+                id: "9",
+                name: "GAS PIPE",
+            },
+            {
+                id: "10",
+                name: "GAS STOVE",
+            },
+            {
+                id: "11",
+                name: "HOT PLATE",
+            },
+            {
+                id: "12",
+                name: "WATER PUMP",
+            },
+            {
+                id: "13",
+                name: "PORTABLE GAS STOVE",
+            },
+            {
+                id: "14",
+                name: "PRESSURE COOKER",
+            },
+            {
+                id: "15",
+                name: "SGB AND MODEL ITALY",
+            },
+            {
+                id: "16",
+                name: "TABLE MATE",
+            },
+            {
+                id: "17",
+                name: "WATER KETTLE",
+            },
+            {
+                id: "18",
+                name: "5 PCS BOWL SET",
+            },
+            {
+                id: "19",
+                name: "CEREAL DISPENSER",
+            },
+            {
+                id: "20",
+                name: "DIECAST COOKWARE",
+            },
+            {
+                id: "21",
+                name: "OPALWARE",
+            },
+            {
+                id: "22",
+                name: "BEACH CHAIR",
+            },
+            {
+                id: "23",
+                name: "14 PCS ALU POT",
+            },
+            {
+                id: "24",
+                name: "SPACE SAVER RACK",
+            },
+            {
+                id: "25",
+                name: "6 PCS SS BOWL SET WITH GRATER PLATE",
+            },
+            {
+                id: "26",
+                name: "5 PCS SS COLANDER SET",
+            },
+            {
+                id: "27",
+                name: "STAINLES STEEL POT ( TIFFIN )",
+            },
+            {
+                id: "28",
+                name: "MEAT MINCER",
+            },
+            {
+                id: "29",
+                name: "CORN GRINDER",
+            },
+            {
+                id: "30",
+                name: "PASTA MAKER",
+            },
+            {
+                id: "31",
+                name: "4 PCS FOOD WARMER",
+            },
+            {
+                id: "32",
+                name: "GAS STOVE WITH COVER",
+            },
+            {
+                id: "33",
+                name: "4 BURNER STAND GAS STOVE",
+            },
+            {
+                id: "34",
+                name: "BEACH UMBRELLA",
+            },
+            {
+                id: "35",
+                name: "CAMRY SCALE 20KG",
+            },
+            {
+                id: "36",
+                name: "DIGITAL SCALE",
+            },
+            {
+                id: "37",
+                name: "SMALL SCALE 10KG",
+            },
+            {
+                id: "38",
+                name: "14 PCS STORAGE BOX",
+            },
+            {
+                id: "39",
+                name: "MATTRESS",
+            },
+            {
+                id: "40",
+                name: "STORAGE RACK",
+            },
+            {
+                id: "41",
+                name: "METAL FLASK",
+            },
+            {
+                id: "42",
+                name: "FOOD PROCESSOR",
+            },
+            {
+                id: "43",
+                name: "SHOERACK",
+            },
+            {
+                id: "44",
+                name: "COFFEE GRINDER",
+            },
+            {
+                id: "45",
+                name: "PAPER CUP",
+            },
+            {
+                id: "46",
+                name: "SCRUBBER",
+            },
+            {
+                id: "47",
+                name: "CUTLERY ITEMS SPOON FORK KNIFE ETC",
+            },
+            {
+                id: "48",
+                name: "SOLIGEN KNIFE",
+            },
+            {
+                id: "49",
+                name: "COOKWARE SET",
+            },
+            {
+                id: "50",
+                name: "CHAFING DISH",
+            },
+            {
+                id: "51",
+                name: "LIQUID DISPENSER",
+            },
+            {
+                id: "52",
+                name: "3 PCS SUITCASE SET",
+            },
+            {
+                id: "53",
+                name: "BLANKET",
+            },
+            {
+                id: "54",
+                name: "COIN BOX",
+            },
+            {
+                id: "55",
+                name: "GIFT BAG",
+            },
+            {
+                id: "56",
+                name: "GIFT WRAPPER ROLL",
+            },
+            {
+                id: "57",
+                name: "VINYL GLOVE",
+            },
+            {
+                id: "58",
+                name: "CUTTING BOARD",
+            },
+        ],
+    },
+    lighting: {
+        "INDOOR LIGHTING": [
+            {
+                id: "1",
+                name: "LED A BULB",
+            },
+            {
+                id: "2",
+                name: "LED T BULB",
+            },
+            {
+                id: "3",
+                name: "LED EMERGENCY BULB",
+            },
+            {
+                id: "4",
+                name: "LED CANDLE BULB",
+            },
+            {
+                id: "5",
+                name: "LED CANDLE BULB TAILED",
+            },
+            {
+                id: "6",
+                name: "LED R50 BULB",
+            },
+            {
+                id: "7",
+                name: "LED R63 BULB",
+            },
+            {
+                id: "8",
+                name: "LED HIGHBAY LIGHT",
+            },
+            {
+                id: "9",
+                name: "GU5.3 BULB",
+            },
+            {
+                id: "10",
+                name: "GU 10 BULB",
+            },
+            {
+                id: "11",
+                name: "LED G9 TUBE",
+            },
+            {
+                id: "12",
+                name: "LED CANDLE BULB DECORATIVE",
+            },
+            {
+                id: "13",
+                name: "LED PANEL LIGHT",
+            },
+            {
+                id: "14",
+                name: "LED DOWN LIGHT",
+            },
+            {
+                id: "15",
+                name: "LED SURFACE PANEL LIGHT",
+            },
+            {
+                id: "16",
+                name: "ENRGY SAVER",
+            },
+            {
+                id: "17",
+                name: "CLEAR BULB 100W 200W",
+            },
+            {
+                id: "18",
+                name: "COLOUR BULB",
+            },
+            {
+                id: "19",
+                name: "LED STRIP LIGHT",
+            },
+        ],
+        "OUTDOOR LIGHTING": [
+            {
+                id: "1",
+                name: "LED FLOOD LIGHT",
+            },
+            {
+                id: "2",
+                name: "LED FLOOD LIGHT",
+            },
+            {
+                id: "3",
+                name: "LED WALL LAMP",
+            },
+            {
+                id: "4",
+                name: "LED ACRYLIC WALL LAMP",
+            },
+            {
+                id: "5",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "6",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "7",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "8",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "9",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "10",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "11",
+                name: "LED PROJECTOR LIGHT",
+            },
+        ],
+        "SOLAR LIGHTING": [
+            {
+                id: "1",
+                name: "LED FLOOD LIGHT",
+            },
+            {
+                id: "2",
+                name: "LED FLOOD LIGHT",
+            },
+            {
+                id: "3",
+                name: "LED WALL LAMP",
+            },
+            {
+                id: "4",
+                name: "LED ACRYLIC WALL LAMP",
+            },
+            {
+                id: "5",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "6",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "7",
+                name: "LED GARDEN LIGHT",
+            },
+            {
+                id: "8",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "9",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "10",
+                name: "LED STREET LIGHT",
+            },
+            {
+                id: "11",
+                name: "SOLAR PORTABLE POWER STATION",
+            },
         ],
     },
 }
