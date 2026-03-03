@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer className="mx-auto max-w-9xl px-4 pb-8">
             <div className="rounded-2xl bg-accent/5 px-6 py-8 md:p-12">
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-8 lg:grid-cols-3">
                     <div>
                         <Link href="/" className="inline-block">
                             <Image src={LOGO} className="w-72" alt="" />
@@ -61,12 +61,20 @@ export default function Footer() {
                             @avisionx ↗
                         </Link>
                     </p>
-                    <p className="mt-1">
+                    <p className="mt-1 text-xs">
                         Copyright © {new Date().getFullYear()}{" "}
                         <Link href="/" className="underline">
                             Vee Gee Exports Limited
                         </Link>
-                        . All Rights Reserved.{" "}
+                        {" · "}
+                        All rights reserved {" · "}
+                        <Link href="/privacy" className="underline">
+                            Privacy Policy
+                        </Link>
+                        {" · "}
+                        <Link href="/tnc" className="underline">
+                            Terms &amp; Conditions
+                        </Link>
                     </p>
                 </div>
             </div>

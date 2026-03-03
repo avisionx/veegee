@@ -24,7 +24,7 @@ export default function HomePage() {
                             <span className="font-heading italic text-secondary">
                                 Global
                             </span>{" "}
-                            Partner <br /> Since 2002.
+                            Partner <br /> Since 2005.
                         </h1>
                         <p className="text-black/80 md:text-lg">
                             {CONTENT.homepage.hero.subtitle}

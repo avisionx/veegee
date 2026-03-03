@@ -3,15 +3,16 @@ import { EyeIcon, GemIcon, LeafIcon } from "lucide-react"
 import { slugify, toTitleCase } from "@/app/utils"
 
 export const CONTACT_EMAIL = "vgexports@vng.sina.net"
-export const CONTACT_PHONE_NUMBER_1 = "+91 1414 030115"
-export const CONTACT_PHONE_NUMBER_2 = "+91 982 9138378"
+export const CONTACT_PHONE_NUMBER_1 = "+86 138 5787 8564"
+export const CONTACT_PHONE_NUMBER_2 = "+91 98291 38378"
+export const CONTACT_PHONE_NUMBER_3 = "+971 55 651 5107"
 export const CONTACT_URL = "/contact"
 
 export const CONTENT = {
     seo: {
         title: "Vee Gee Exports Limited - Quality Products at Affordable Prices",
         description:
-            "Since 2002, Vee Gee Exports Limited has been delivering high-quality food, non-food, and personal care products worldwide at affordable prices.",
+            "Since 2005, Vee Gee Exports Limited has been delivering high-quality food, non-food, and personal care products worldwide at affordable prices.",
         keywords: [
             "Vee Gee Exports",
             "FMCG Exports",
@@ -29,7 +30,7 @@ export const CONTENT = {
     homepage: {
         hero: {
             subtitle:
-                "Serving Africa, the Caribbean, the Middle East, and beyond with quality products from India.",
+                "Serving Africa, the Caribbean, the Middle East, the Levant, and beyond with quality products from China.",
             scrollText: "Scroll to browse our product range",
         },
         products: {
@@ -42,7 +43,7 @@ export const CONTENT = {
             subtitle:
                 "Partnering with us means working with a team that values reliability, consistency, and long-term success - built on trust and a deep understanding of global trade.",
             features: [
-                "Global Reach: Supplying quality products to markets across Africa, the Caribbean, and the Middle East.",
+                "Global Reach: Supplying quality products to markets across Africa, the Caribbean, the Middle East and the Levant.",
                 "Diverse Range: Offering household, electrical, and furniture products to meet every market need.",
                 "Strong Sourcing: Delivering premium quality with exceptional value and competitive strength.",
                 "Mutual Growth: Building transparent, lasting partnerships that create shared success.",
@@ -53,7 +54,7 @@ export const CONTENT = {
         hero: {
             title: "About Us",
             subtitle:
-                "Since 2002, Vee Gee Exports Limited has been transforming the way businesses access high-quality household, electrical, and furniture products worldwide. What started as a vision to provide reliable, premium solutions has grown into a global network of satisfied clients and trusted partners.",
+                "Since 2005, Vee Gee Exports Limited has been transforming the way businesses access high-quality household, electrical, and furniture products worldwide. What started as a vision to provide reliable, premium solutions has grown into a global network of satisfied clients and trusted partners.",
             para1: "Our commitment goes beyond products - we focus on delivering consistency, reliability, and tailored solutions that help businesses thrive. With every shipment, we bring not just products, but peace of mind and a promise of excellence.",
             para2: "At Vee Gee Exports Limited, your business is our priority, and global service is our standard.",
             features: [
@@ -80,13 +81,13 @@ export const CONTENT = {
             title: "Our Journey",
             subtitle:
                 "From a small office in Guangzhou, China, to a global leader in household, electrical, and furniture products, Vee Gee Exports Limited has built a story of passion, growth, and excellence.",
-            para1: "Founded in 2002 by Mr. Girish Bhagtani and Mr. Ravi Choithani, our mission has always been to set new benchmarks in quality, reliability, and customer satisfaction. Over the years, we have expanded our presence with offices in India, China, Hong Kong, and the UAE, serving clients across Africa, the Caribbean, the Middle East, and the Levant.",
+            para1: "Founded in 2005 by Mr. Girish Bhagtani and Mr. Ravi Kumar, our mission has always been to set new benchmarks in quality, reliability, and customer satisfaction. Over the years, we have expanded our presence with offices in India, China, Hong Kong, and the UAE, serving clients across Africa, the Caribbean, the Middle East, and the Levant.",
             para2: "Through strategic partnerships and a commitment to excellence, we deliver products and solutions that help businesses thrive worldwide.",
         },
         location: {
             title: "Our Global Presence",
             subtitle:
-                "Headquartered in Jaipur, India, Vee Gee Exports Limited operates across multiple international markets, with branches in Hong Kong and China to efficiently serve our global clients.",
+                "Headquartered in Ningbo, China, Vee Gee Exports Limited operates across multiple international markets, with branches in China, Hong Kong, Dubai and India to efficiently serve our global clients.",
         },
     },
     contact: {
@@ -98,7 +99,7 @@ export const CONTENT = {
         locations: {
             title: "Our Addresses",
             subtitle:
-                "Reach out to us at our office in Jaipur, India, or our warehouse in Mumbai, India.",
+                "Reach out to us at our offices across China, India, and Dubai.",
         },
     },
     cta: {
@@ -2134,7 +2135,7 @@ export const MENU_DATA = [
         submenu: getProductMenu(),
     },
     {
-        title: "About",
+        title: "About Us",
         href: "/about",
     },
 ]
@@ -2143,7 +2144,7 @@ export const FOOTER_LINKS = [
     {
         title: "Quick Links",
         links: [
-            { href: "/about", label: "About" },
+            { href: "/about", label: "About Us" },
             { href: "/contact", label: "Contact" },
             { href: "/sitemap.xml", label: "Sitemap ↗" },
         ],
@@ -2160,13 +2161,10 @@ export const FOOTER_LINKS = [
                 href: `tel:${CONTACT_PHONE_NUMBER_2}`,
                 label: `${CONTACT_PHONE_NUMBER_2}`,
             },
-        ],
-    },
-    {
-        title: "Legal",
-        links: [
-            { href: "/tnc", label: "Terms & Conditions" },
-            { href: "/privacy", label: "Privacy Policy" },
+            {
+                href: `tel:${CONTACT_PHONE_NUMBER_3}`,
+                label: `${CONTACT_PHONE_NUMBER_3}`,
+            },
         ],
     },
 ]
