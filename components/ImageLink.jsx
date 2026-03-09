@@ -21,7 +21,7 @@ export default function ImageLink({
                     src={imageSrc}
                     width={512}
                     height={512}
-                    className="h-full w-full object-cover transition-all group-hover:scale-110"
+                    className="h-full max-h-96 w-full object-cover transition-all group-hover:scale-110"
                     alt={imageAlt}
                     priority={priority}
                 />
