@@ -2,6 +2,8 @@ import { EyeIcon, GemIcon, LeafIcon } from "lucide-react"
 
 import { slugify, toTitleCase } from "@/app/utils"
 
+export const IMAGE_VERSION = "v1"
+
 export const CONTACT_EMAIL = "vgexports@vng.sina.net"
 export const CONTACT_PHONE_NUMBER_1 = "+86 138 5787 8564"
 export const CONTACT_PHONE_NUMBER_2 = "+91 98291 38378"

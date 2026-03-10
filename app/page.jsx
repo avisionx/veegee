@@ -10,7 +10,7 @@ import FancyHeading from "@/components/FancyHeading"
 import HeroGallery from "@/components/HeroGallery"
 import ImageLink from "@/components/ImageLink"
 
-import { CATEGORIES, CONTACT_URL, CONTENT } from "@/app/constants"
+import { CATEGORIES, CONTACT_URL, CONTENT, IMAGE_VERSION } from "@/app/constants"
 import { toTitleCase } from "@/app/utils"
 
 export default function HomePage() {
@@ -58,7 +58,7 @@ export default function HomePage() {
                                 key={category}
                                 title={toTitleCase(category)}
                                 href={`/products/${category}`}
-                                imageSrc={`/images/products/${category}.webp`}
+                                imageSrc={`/images/${IMAGE_VERSION}/products/${category}.webp`}
                                 priority
                             />
                         ))}

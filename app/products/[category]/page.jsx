@@ -4,7 +4,7 @@ import CTA from "@/components/CTA"
 import ImageLink from "@/components/ImageLink"
 import PageTitle from "@/components/PageTitle"
 
-import { CATEGORIES, CATEGORIES_SUBTITLE, PRODUCTS } from "@/app/constants"
+import { CATEGORIES, CATEGORIES_SUBTITLE, IMAGE_VERSION, PRODUCTS } from "@/app/constants"
 import { slugify, toTitleCase } from "@/app/utils"
 
 export default async function CategoryPage({ params }) {
@@ -23,7 +23,7 @@ export default async function CategoryPage({ params }) {
                             key={subcategory}
                             title={toTitleCase(subcategory)}
                             href={`/products/${category}/${slugify(subcategory)}`}
-                            imageSrc={`/images/products/${category}/${subcategory}.webp`}
+                            imageSrc={`/images/${IMAGE_VERSION}/products/${category}/${subcategory}.webp`}
                             priority
                         />
                     ))}
