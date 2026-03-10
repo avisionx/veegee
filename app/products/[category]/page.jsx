@@ -23,11 +23,7 @@ export default async function CategoryPage({ params }) {
                             key={subcategory}
                             title={toTitleCase(subcategory)}
                             href={`/products/${category}/${slugify(subcategory)}`}
-                            imageSrc={
-                                false
-                                    ? `/images/products/${category}/${slugify(subcategory)}.webp`
-                                    : `https://picsum.photos/300.webp?random=${subcategory}`
-                            }
+                            imageSrc={`/images/products/${category}/${subcategory}.webp`}
                             priority
                         />
                     ))}
