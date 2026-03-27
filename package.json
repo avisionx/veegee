@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "node generate_sitemap.js && next build && rm -rf public/sitemap.xml",
     "start": "next start",
+    "images:products": "python3 scripts/download_product_images.py",
     "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
     "format": "prettier --write '*/**/*.{js,jsx,ts,tsx,json,css,md}'"
