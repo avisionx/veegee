@@ -35,7 +35,7 @@ export default async function SubcategoryPage({ params }) {
                     title={title}
                     subtitle="Browse from our wide range of products in this category."
                 />
-                <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                <div className="mt-16 grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6">
                     {products.map(({ id, name }) => (
                         <div
                             key={id}
@@ -45,7 +45,7 @@ export default async function SubcategoryPage({ params }) {
                                 src={getProductImageSrc(category, title, id, name)}
                                 width={512}
                                 height={512}
-                                className="h-56 w-full object-cover"
+                                className="h-72 w-full object-fit"
                                 alt={`${name} (${id})`}
                             />
                             <div className="p-4">
