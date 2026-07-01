@@ -2,7 +2,7 @@
 """Download one Google image per product item and save as WebP.
 
 Output structure:
-public/images/v1/products/<category>/<subcategory-slug>/<product-slug>.webp
+public/images/v2/products/<category>/<subcategory-slug>/<product-slug>.webp
 
 Dependencies:
     pip install icrawler pillow
@@ -368,7 +368,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        default="public/images/v1/products",
+        default="public/images/v2/products",
         help="Output root for generated images. Relative paths are resolved from the repo root.",
     )
     parser.add_argument(
